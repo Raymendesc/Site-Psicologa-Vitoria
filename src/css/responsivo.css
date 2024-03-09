@@ -1,0 +1,213 @@
+@media (max-width: 1024px){
+    .cabecalho{
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 15px;
+    }
+    .cabecalho .menu {
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho .menu li a{
+        padding: 5px;
+    }
+
+    .home .informacoes{
+        padding: 30px;
+    }
+
+    .home .informacoes .titulo{
+        font-size: 40px;
+    }
+
+    .compre-ja .cartao{
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para dispositivos móveis */
+    .cabecalho {
+        height: auto;
+        padding: 0 20px; /* Reduza o padding para economizar espaço */
+    }
+    .cabecalho .logo {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .btn-contato {
+        width: 100%; /* Faça o botão de contato ocupar a largura total */
+    }
+    .home .informacoes {
+        padding: 10px; /* Reduza o padding para economizar espaço */
+        gap: 40px;
+    }
+        .home .informacoes img {
+        max-width: 60%; /* Faça a imagem ocupar a largura total */
+        float: none; /* Remova a flutuação */
+        
+    }
+}
+@media only screen and (max-width: 768px) {
+    .home .informacoes .titulo {
+        font-size: 20px; /* Reduza o tamanho da fonte do título */
+    }
+    .home .informacoes .subtitulo {
+        font-size: 16px; /* Reduza o tamanho da fonte do subtítulo */
+    }
+    .home .informacoes .texto {
+        font-size: 14px; /* Reduza o tamanho da fonte do texto */
+        line-height: 1.4; /* Ajuste o espaçamento entre linhas */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .home .informacoes {
+        flex-direction: column; /* Empilhe os elementos verticalmente */
+        text-align: center; /* Centralize o texto */
+    }
+}
+/* Adicione um novo estilo para o ícone do menu de hambúrguer */
+.menu-hamburguer {
+    display: none; /* Oculta por padrão em telas maiores */
+}
+
+/* Mostra o menu de hambúrguer apenas em telas menores */
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta o menu principal em telas menores */
+    }
+    .menu-hamburguer {
+        display: block; /* Mostra o ícone do menu de hambúrguer */
+        cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    }
+}
+
+/* Estilo para o ícone do menu de hambúrguer */
+.menu-hamburguer i {
+    font-size: 24px;
+    color: #f8f7f2;
+}
+
+@media only screen and (max-width: 768px) {
+    #sobremim {
+        height: 90%;
+        padding: 10px;
+    }
+    }
+@media only screen and (max-width: 768px) {
+#sobrepsicoterapia {
+    height: 90%;
+    padding: 20px;
+}
+}
+@media only screen and (max-width: 768px) {
+#areasdeatuacao {
+    position: relative; /* Posição relativa para posicionamento do pseudo-elemento */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 50px 0; /* Espaçamento interno para separar da borda da janela */
+    background-color: #6e9277; /* Cor do plano de fundo principal */
+    height: 100vh;
+    display: flex; /* Usando flexbox para centralizar verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 90vh;
+    padding: 20px;
+    flex: auto;
+}
+
+#areasdeatuacao::before {
+    content: ''; /* Cria um conteúdo para o pseudo-elemento */
+    position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+    top: 50%; /* Posicionamento a 50% da altura do elemento pai */
+    left: 50%; /* Posicionamento a 50% da largura do elemento pai */
+    transform: translate(-50%, -50%); /* Move o elemento para o centro */
+    width: 100%; /* Largura de 80% do elemento pai */
+    height: 60%; /* Altura de 60% do elemento pai */
+    z-index: 1; /* Coloca o pseudo-elemento na frente do conteúdo */
+    border-radius: 60px;
+}
+
+
+.container  {
+    
+    align-items: center; /* Centraliza na direção transversal */
+    position: relative; /* Necessário para que o z-index funcione */
+    z-index: 2; /* Garante que o conteúdo fique na frente do segundo plano de fundo */
+}
+
+
+
+
+/* Outros estilos conforme necessário */
+
+
+.areas-de-atuacao {
+    color: #6e9277; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-family: 'Chalet';
+}
+
+.conteudo-areas-de-atuacao {
+    display: flex; /* Utiliza flexbox para alinhar os elementos lado a lado */
+    flex-direction: row; /* Alinha os elementos em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza na direção transversal */
+}
+
+.conteudo-areas-de-atuacao p {
+    color: #6e9277; /* Cor do texto */
+    font-family: 'Chalet';
+    text-align: justify; /* Justifica o texto */
+    max-width: 500px; /* Define a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    font-size: 14px;
+    line-height: 2.0;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    #atendimentos {
+        height: 90%;
+        padding: 20px;
+    }
+    }
+
+@media only screen and (max-width: 768px) {
+#contato {
+    height: 90%;
+    padding: 20px;
+}
+}
+
+
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}

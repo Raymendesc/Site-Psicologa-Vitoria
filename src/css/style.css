@@ -1,0 +1,386 @@
+body{
+    background-color: #f8f7f2;
+    color: #6e9277;
+}
+
+.cabecalho{
+    height: 140px;
+    background-color: #6e9277;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #f8f7f2;
+}
+
+.cabecalho .logo{
+    display: flex;
+    gap: 15px;
+
+}
+
+.cabecalho .menu{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.cabecalho .menu li a{
+    padding: 3px;
+    color: #f8f7f2;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Chalet';
+    text-decoration: none;
+}
+
+.cabecalho .menu li a:hover{
+    border-bottom: 2px solid #f8f7f2;
+}
+
+.home{
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+    justify-content: space-between;
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.home .informacoes{
+    position: unset;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+    gap: 90px;
+    padding: 8px 8px 8px 160px; 
+    max-width: 1100px;
+}
+
+.home .informacoes img{
+    max-width: 320px;
+    float: right;
+}
+
+.home .informacoes .titulo {
+    font-family: 'Chalet';
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+}
+
+.home .informacoes .subtitulo{
+    font-family: 'Chalet';
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.home .informacoes .texto{
+    font-family: 'Chalet';
+    font-size: 16px;
+    line-height: 1.6;
+    text-indent: 15px;
+    max-width: 768px;
+}
+
+.btn-contato{
+    background-color: #6e9277;
+    color:#f8f7f2;
+    border: 0.5px solid #f8f7f2;
+    border-radius: 100px;
+    font-family: 'Chalet';
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 40px;
+    width: 15%;
+    transition: all .3s ease-in;
+    text-decoration: none;
+}
+
+#sobremim {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 50px 0; /* Espaçamento interno para separar da borda da janela */
+    background-color: #6e9277;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza na direção transversal */
+}
+
+.titulo-sobre-mim {
+    color: #f8f7f2; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-family: 'Chalet';
+}
+
+.conteudo-sobre-mim {
+    display: flex; /* Utiliza flexbox para alinhar os elementos lado a lado */
+    flex-direction: row; /* Alinha os elementos em linha */
+    align-items: center; /* Centraliza na direção transversal */
+}
+
+.sobre-mim-texto p {
+    color: #f8f7f2; /* Cor do texto */
+    font-family: 'Chalet';
+    text-align: justify; /* Justifica o texto */
+    max-width: 600px; /* Define a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    font-size: 16px;
+    line-height: 2.0;
+    text-indent: 15px;
+}
+
+#sobrepsicoterapia {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 50px 0; /* Espaçamento interno para separar da borda da janela */
+    background-color: #f8f7f2;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza na direção transversal */
+}
+
+.sobre-psicoterapia {
+    color: #6e9277; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-family: 'Chalet';
+}
+
+.conteudo-sobre-psicoterapia {
+    display: flex; /* Utiliza flexbox para alinhar os elementos lado a lado */
+    flex-direction: row; /* Alinha os elementos em linha */
+    align-items: center; /* Centraliza na direção transversal */
+}
+
+.conteudo-sobre-psicoterapia p {
+    color: #6e9277; /* Cor do texto */
+    font-family: 'Chalet';
+    text-align: justify; /* Justifica o texto */
+    max-width: 600px; /* Define a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    font-size: 16px;
+    line-height: 1.7;
+    text-indent: 15px;
+}
+
+#areasdeatuacao {
+    position: relative; /* Posição relativa para posicionamento do pseudo-elemento */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 50px 0; /* Espaçamento interno para separar da borda da janela */
+    background-color: #6e9277; /* Cor do plano de fundo principal */
+    height: 100vh;
+    display: flex; /* Usando flexbox para centralizar verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#areasdeatuacao::before {
+    content: ''; /* Cria um conteúdo para o pseudo-elemento */
+    position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+    top: 50%; /* Posicionamento a 50% da altura do elemento pai */
+    left: 50%; /* Posicionamento a 50% da largura do elemento pai */
+    transform: translate(-50%, -50%); /* Move o elemento para o centro */
+    width: 70%; /* Largura de 80% do elemento pai */
+    height: 60%; /* Altura de 60% do elemento pai */
+    background-color: #f8f7f2; /* Cor do segundo plano de fundo com transparência */
+    z-index: 1; /* Coloca o pseudo-elemento na frente do conteúdo */
+    border-radius: 20px;
+}
+
+
+.container {
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza na direção transversal */
+    position: relative; /* Necessário para que o z-index funcione */
+    z-index: 2; /* Garante que o conteúdo fique na frente do segundo plano de fundo */
+}
+
+/* Outros estilos conforme necessário */
+
+
+.areas-de-atuacao {
+    color: #6e9277; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-family: 'Chalet';
+}
+
+.conteudo-areas-de-atuacao {
+    display: flex; /* Utiliza flexbox para alinhar os elementos lado a lado */
+    flex-direction: row; /* Alinha os elementos em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza na direção transversal */
+}
+
+.conteudo-areas-de-atuacao p {
+    column-count: 2; /* Divide o conteúdo em 3 colunas */
+    column-gap: 50px; /* Espaçamento entre as colunas */
+    color: #6e9277; /* Cor do texto */
+    font-family: 'Chalet';
+    text-align: justify; /* Justifica o texto */
+    max-width: 500px; /* Define a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    font-size: 16px;
+    line-height: 2.0;
+}
+
+#atendimentos {
+    text-align: left; /* Centraliza o conteúdo */
+    padding: 50px 0; /* Espaçamento interno para separar da borda da janela */
+    background-color: #f8f7f2;
+    height: 100vh;
+}
+
+.atendimentos h1 {
+    font-family: 'Chalet';
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza na direção transversal */
+}
+
+.conteudo-atendimentos {
+    color: #6e9277; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-family: 'Chalet';
+}
+.conteudo-atendimentos h2 {
+    color: #fff; /* Cor do texto */
+    background-color: #6e9277; /* Cor do fundo */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.sublinhado {
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+
+.atendimentos-texto p {
+    color: #6e9277; /* Cor do texto */
+    font-family: 'Chalet';
+    text-align: justify; /* Justifica o texto */
+    max-width: 600px; /* Define a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    font-size: 16px;
+    line-height: 1.5;
+    text-indent: 15px;
+}
+
+#depoimentos {
+    position: relative; /* Posição relativa para posicionamento do pseudo-elemento */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 50px 0; /* Espaçamento interno para separar da borda da janela */
+    background-color: #6e9277; /* Cor do plano de fundo principal */
+    height: 100vh;
+    display: flex; /* Usando flexbox para centralizar verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#depoimentos::before {
+    content: ''; /* Cria um conteúdo para o pseudo-elemento */
+    position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+    top: 50%; /* Posicionamento a 50% da altura do elemento pai */
+    left: 50%; /* Posicionamento a 50% da largura do elemento pai */
+    transform: translate(-50%, -50%); /* Move o elemento para o centro */
+    width: 50%; /* Largura de 80% do elemento pai */
+    height: 60%; /* Altura de 60% do elemento pai */
+    background-color: #f8f7f2; /* Cor do segundo plano de fundo com transparência */
+    z-index: 1; /* Coloca o pseudo-elemento na frente do conteúdo */
+    border-radius: 20px;
+}
+
+
+.container {
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza na direção transversal */
+    position: relative; /* Necessário para que o z-index funcione */
+    z-index: 2; /* Garante que o conteúdo fique na frente do segundo plano de fundo */
+}
+
+/* Outros estilos conforme necessário */
+
+
+.depoimentos {
+    color: #6e9277; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-family: 'Chalet';
+}
+
+.conteudo-depoimentos {
+    display: flex; /* Utiliza flexbox para alinhar os elementos lado a lado */
+    flex-direction: row; /* Alinha os elementos em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza na direção transversal */
+}
+
+.conteudo-depoimentos p {
+    column-count: 2; /* Divide o conteúdo em 3 colunas */
+    column-gap: 50px; /* Espaçamento entre as colunas */
+    color: #6e9277; /* Cor do texto */
+    font-family: 'Chalet';
+    text-align: justify; /* Justifica o texto */
+    max-width: 500px; /* Define a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    font-size: 16px;
+    line-height: 2.0;
+}
+
+#contato {
+    text-align: left; /* Centraliza o conteúdo */
+    padding: 50px 0; /* Espaçamento interno para separar da borda da janela */
+    background-color: #6e9277;
+    height: 100vh;
+}
+
+.contato h2 {
+    font-family: 'Chalet';
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza na direção transversal */
+    width: 100%;
+}
+
+.conteudo-contato {
+    color: #f8f7f2; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-family: 'Chalet';
+}
+
+.novo-btn .btn-contato {
+    background-color: #f8f7f2;
+    color:#6e9277;
+    border: 0.5px solid #6e9277;
+    border-radius: 100px;
+    font-family: 'Chalet';
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 40px;
+    width: 15%;
+    transition: all .3s ease-in;
+    text-decoration: none;
+}
